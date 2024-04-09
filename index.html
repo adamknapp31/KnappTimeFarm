@@ -4,59 +4,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farm Home</title>
+    <title>Knapp Time Farms</title>
+    <link rel="icon" type="image/svg+xml" href="images/FarmLogo.svg">
+    <link rel="alternate icon" href="path/to/your/favicon.ico"> <!-- Fallback for older browsers -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
+<style>
+    /* Carousel styling */
+    .carousel-item {
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    /* Navbar styling */
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for contrast */
+    }
+    
+    .navbar .navbar-nav .nav-link, .navbar-brand {
+        color: #FFFFFF; /* Ensure all text is white */
+    }
+    
+    /* Adjust navbar brand/logo size for all screens and ensure logo is white */
+    .navbar-brand img {
+        max-height: 100px; /* Adjust based on your preference */
+        filter: brightness(0) invert(1); /* Makes the logo white */
+    }
+    
+    /* Simplify navbar toggler icon */
+    .navbar-toggler {
+        border-color: rgba(255, 255, 255, 0.5); /* Ensures toggler visibility */
+    }
+    
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Custom white toggler icon */
+    }
+
+    .carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    z-index: 2; /* Ensures it's above the carousel images but below interactive elements */
+}
+
+.farm-name {
+    color: #fff; /* White for contrast */
+    font-size: 4rem; /* Adjust based on design preference */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .farm-name {
+        font-size: 2rem; /* Smaller font size for smaller devices */
+    }
+}
+
+    </style>
+    
+    
+    
+    
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Farm Home</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Products</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-            </li>
-        </ul>
-    </div>
-</nav>
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <!-- Overlay Container -->
+    <!-- Overlay Container -->
+    <div class="carousel-overlay">
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <!-- Navbar Content -->
+            <div class="container-fluid">
+                <a class="navbar-brand mx-auto" href="#">
+                    <img src="images/FarmLogo.svg" alt="Logo" style="height: 100px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <h1 class="farm-name">Knapp Time Farms</h1>
+
+    </div>
+
+
+    <!-- Carousel Indicators -->
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     </ol>
+
+    <!-- Carousel Inner -->
     <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="images/FarmWinter.jpg" class="d-block w-100" alt="Farm Image 1">
+        <div class="carousel-item active" style="background-image: url('images/FarmWinter.jpg');">
+            <!-- Optional content here, such as a caption -->
+            <div class="carousel-caption d-none d-md-block">
+                <h5></h5>
+                <p></p>
+            </div>
         </div>
-        <div class="carousel-item">
-            <img src="images/FarmWinter.jpg" class="d-block w-100" alt="Farm Image 2">
+        <div class="carousel-item" style="background-image: url('images/FarmSpring.jpg');">
+            <!-- Optional content here -->
         </div>
-        <div class="carousel-item">
-            <img src="images/FarmWinter.jpg" class="d-block w-100" alt="Farm Image 3">
+        <div class="carousel-item" style="background-image: url('images/FarmSummer.jpg');">
+            <!-- Optional content here -->
         </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
+
+</div>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="images/MikeWithPig.jpg" alt="Product 1">
+                <div class="card-body">
+                    <h5 class="card-title">Our Products</h5>
+                    <p class="card-text">Discover the range of products we offer from our farm.</p>
+                    <a href="products.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="images/MikeHoldingHayBail.jpg" alt="Our Story">
+                <div class="card-body">
+                    <h5 class="card-title">Our Story</h5>
+                    <p class="card-text">Learn about our farm's history and our commitment to quality.</p>
+                    <a href="story.html" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="images/Steers.jpg" alt="Visit Us">
+                <div class="card-body">
+                    <h5 class="card-title">Upcoming Markets</h5>
+                    <p class="card-text">Plan a visit us at a Farmers Market</p>
+                    <a href="visit.html" class="btn btn-primary">Plan Your Visit</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
