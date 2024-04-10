@@ -10,37 +10,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <style>
-    /* Carousel styling */
-    .carousel-item {
-        height: 100vh;
-        background-size: cover;
-        background-position: center;
-    }
     
-    .carousel-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh; /* Full height of the viewport */
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    z-index: 2; /* Ensures it's above the carousel images but below interactive elements */
-}
-
-.farm-name {
-    color: #fff; /* White for contrast */
-    font-size: 4rem; /* Adjust based on design preference */
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
-}
-
-/* Adjustments for smaller screens */
-@media (max-width: 768px) {
-    .farm-name {
-        font-size: 2rem; /* Smaller font size for smaller devices */
-    }
-}
 
     </style>
     
@@ -51,32 +21,9 @@
 
     <div id="navbar-placeholder"></div>
     <script src="/components/navbar.js"></script>
-
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <div class="carousel-overlay">     
-        <h1 class="farm-name">Knapp Time Farms</h1>
-
-    </div>
-
-
-    <!-- Carousel Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    </ol>
-
-    <!-- Carousel Inner -->
-    <div class="carousel-inner">
-        <div class="carousel-item active" style="background-image: url('images/FarmWinter.jpg');">
-            <!-- Optional content here, such as a caption -->
-        </div>
-        <div class="carousel-item" style="background-image: url('images/FarmSpring.jpg');">
-            <!-- Optional content here -->
-        </div>
-        </div>
-    </div>
-
-</div>
+    
+    
+    
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-4">
@@ -85,7 +32,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Our Products</h5>
                     <p class="card-text">Discover the range of products we offer from our farm.</p>
-                    <a href="#" class="btn btn-primary disabled">Learn More</a>
+                    <a href="products.html" class="btn btn-primary">Learn More</a>
                 </div>
             </div>
         </div>
@@ -95,7 +42,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Our Story</h5>
                     <p class="card-text">Learn about our farm's history and our commitment to quality.</p>
-                    <a href="#" class="btn btn-primary disabled">Read More</a>
+                    <a href="story.html" class="btn btn-primary">Read More</a>
                 </div>
             </div>
         </div>
@@ -105,13 +52,13 @@
                 <div class="card-body">
                     <h5 class="card-title">Upcoming Markets</h5>
                     <p class="card-text">Plan a visit us at a Farmers Market</p>
-                    <a href="#" class="btn btn-primary disabled">Plan Your Visit</a>
+                    <a href="visit.html" class="btn btn-primary">Plan Your Visit</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
+<script src="components/navbar-component.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
