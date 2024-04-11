@@ -35,6 +35,7 @@
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
 }
 
+
 /* Adjustments for smaller screens */
 @media (max-width: 768px) {
     .farm-name {
@@ -50,13 +51,20 @@
 <body>
 
     <div id="navbar-placeholder"></div>
-    <script src="/components/navbar.js"></script>
+    <script src="components/navbar.js"></script>
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <div class="carousel-overlay">     
-        <h1 class="farm-name">Knapp Time Farms</h1>
 
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-overlay d-flex flex-column align-items-center justify-content-center">     
+            <h1 class="farm-name text-white text-center mb-4">Knapp Time Farms</h1>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactFormModal">
+                Contact Us
+            </button>
+        </div>
     </div>
+    
 
 
     <!-- Carousel Indicators -->
@@ -79,7 +87,7 @@
 </div>
 <div class="container mt-5">
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 d-flex align-items-stretch">
             <div class="card">
                 <img class="card-img-top" src="images/MikeWithPig.jpg" alt="Product 1">
                 <div class="card-body">
@@ -89,7 +97,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 d-flex align-items-stretch">
             <div class="card">
                 <img class="card-img-top" src="images/MikeHoldingHayBail.jpg" alt="Our Story">
                 <div class="card-body">
@@ -99,7 +107,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 d-flex align-items-stretch">
             <div class="card">
                 <img class="card-img-top" src="images/Steers.jpg" alt="Visit Us">
                 <div class="card-body">
@@ -111,6 +119,12 @@
         </div>
     </div>
 </div>
+
+<div id="contactModel-placeholder"></div>
+    <script src="components/contactModal.js"></script>
+   
+<div id="contactForm-placeholder"></div>
+<script src="components/contactForm.js"></script>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
