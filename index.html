@@ -14,7 +14,7 @@
     .carousel-item {
         height: 100vh;
         background-size: cover;
-        background-position: center;
+        background-position: top;
     }
     
     .carousel-overlay {
@@ -71,16 +71,17 @@
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     </ol>
 
     <!-- Carousel Inner -->
     <div class="carousel-inner">
-        <div class="carousel-item active" style="background-image: url('images/FarmWinter.jpg');">
+        <div class="carousel-item active" style="background-image: url('images/FarmFall.JPG');">
             <!-- Optional content here, such as a caption -->
         </div>
-        <div class="carousel-item" style="background-image: url('images/FarmSpring.jpg');">
-            <!-- Optional content here -->
-        </div>
+    
+        <div class="carousel-item" style="background-image: url('images/FarmWinter.JPG');"></div>
+        <div class="carousel-item" style="background-image: url('images/FarmSpring.JPG');"></div>
         </div>
     </div>
 
@@ -103,17 +104,17 @@
                 <div class="card-body">
                     <h5 class="card-title">Our Story</h5>
                     <p class="card-text">Learn about our farm's history and our commitment to quality.</p>
-                    <a href="#" class="btn btn-primary disabled">Read More</a>
+                    <a href="story.html" class="btn btn-primary disabled">Read More</a>
                 </div>
             </div>
         </div>
         <div class="col-md-4 d-flex align-items-stretch">
             <div class="card">
-                <img class="card-img-top" src="images/Steers.jpg" alt="Visit Us">
+                <img class="card-img-top" src="images/MarketMike.jpg" alt="Visit Us">
                 <div class="card-body">
                     <h5 class="card-title">Upcoming Markets</h5>
                     <p class="card-text">Plan to visit us at the SoCO Farmers Market in Uptown Somerset, PA</p>
-                    <a href="#" class="btn btn-primary disabled">Plan Your Visit</a>
+                    <a href="https://socofarmersmarket.com/" class="btn btn-primary">Plan Your Visit</a>
                 </div>
             </div>
         </div>
