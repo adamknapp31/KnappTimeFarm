@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function(){
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item"><a class="nav-link" href="index.html" style="color: #FFFFFF;">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="story.html" style="color: #FFFFFF;">Story</a></li>
-                        <!-- Add more navbar items here -->
+                        <!-- Add more navbar items here k-->
                     </ul>
                 </div>
             </div>
